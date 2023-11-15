@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- input section -->
+      <div class="top_input_container">
+        <form autocomplete="off">
+          <section class="input_section_day">
+            <p>Day</p>
+            <input type="number" name="day" placeholder="DD" />
+            <small>This field is required</small>
+          </section>
+          <section class="input_section_month">
+            <p>Month</p>
+            <input type="number" name="month" placeholder="MM" />
+            <small>This field is required</small>
+          </section>
+          <section class="input_section_year">
+            <p>Year</p>
+            <input type="number" name="year" placeholder="YYYY" />
+            <small>This field is required</small>
+          </section>
+        </form>
+      </div>
+      <!-- send button section -->
+      <div class="calculate_button_container">
+        <div class="calculate_icon">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </div>
+      </div>
+      <!-- results section -->
+      <div class="results_container">
+        <section>
+          <span></span>
+          <p>years</p>
+        </section>
+        <section>
+          <span></span>
+          <p>months</p>
+        </section>
+        <section>
+          <span></span>
+          <p>days</p>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
