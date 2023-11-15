@@ -185,10 +185,13 @@ function removeSlashesAndUpdateResults() {
     // days old here
     daysOld = currentDay - day;
   }
-
-  console.log(
-    `years old :${yearsOld} \n months old : ${monthsOld} \n days old:${daysOld}`
-  );
+  let spans = document.querySelectorAll(".results_container section span");
+  spans.forEach((span) => {
+    span.classList.add("active");
+  });
+  find(".results_container .years_result").textContent = yearsOld;
+  find(".results_container .months_result").textContent = monthsOld;
+  find(".results_container .days_result").textContent = daysOld;
 }
 find(".calculate_button_container .calculate_icon").addEventListener(
   "click",
